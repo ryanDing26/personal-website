@@ -1,0 +1,70 @@
+* {
+    font-family: "Play", sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: linear-gradient(to right top, #000000, #0c0a0b, #141314, #1a191b, #1f1f22, #222327, #25282d, #272d32, #283136, #2a3639, #2c3a3b, #2f3e3d);
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+}
+
+header {
+    margin: auto 10px;
+    max-width: 25%;
+    float: left;
+    height: 100%;
+}
+
+#name {
+    font-size: xx-large;
+}
+
+/* Styling of navigation (About, Experience Projects) */
+
+nav {
+    display: flex; /* nav is block display by default */
+    flex-direction: column;
+    width: 100%;
+}
+
+nav a {
+    padding: 10px;
+    font-size: large;
+}
+
+nav a:hover {
+    background-color: white;
+    color: black;
+    text-align: right;
+}
+
+/* Standard sizing of contact info icons */
+
+#contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact img {
+    max-height: 25px;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* TODO: Make some tooltip for this later instead of background hovering */
+#contact img:hover {
+    background: blue;
+}s
+
+/* Standard styling of main sections */
+#about {
+    margin-top: 25px;
+}
