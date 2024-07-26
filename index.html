@@ -11,99 +11,113 @@
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <!-- Modularize this later -->
-    <header id="top">
-      <!-- <div class="me">
+    <noscript>
+      <h1>This would be Ryan Ding's personal website!</h1>
+      <p>...if you had JavaScript enabled. Please do so!</p>
+    </noscript>
+    <header>
+      <div class="me">
+        <img src="./assets/ryan.png" alt="Ryan Ding" class="profile-picture">
+        <!-- Deprecated effect that I may or may not reintegrate later -->
+        <!-- <div class="aura"></div>
         <div class="aura"></div>
         <div class="aura"></div>
         <div class="aura"></div>
-        <div class="aura"></div>
-        <div class="aura"></div>
-      </div> -->
+        <div class="aura"></div> -->
+      </div>
+      <hr>
       <span id="name"><a href="#top">Ryan Ding</a></span>
+      <hr>
       <nav>
           <a href="#about">About</a>
-          <a href="#experiences">Experience</a>
           <a href="#projects">Projects</a>
+          <a href="./assets/resume.pdf" target="_blank">Resume</a>
       </nav>
       <section id="contact">
-        <a href="mailto: dingryan2@gmail.com"><img src="./assets/email.png" alt="Email"></a>
-        <a href="https://www.linkedin.com/in/ryand26/" target="_blank"><img src="./assets/linkedin.png" alt="LinkedIn"></a>
-        <a href="https://github.com/ryanDing26" target="_blank"><img src="./assets/github.png" alt="GitHub"></a>
-        <a href="./assets/resume.pdf"><img src="./assets/resume.png" alt="Resume"></a>
+        <a href="mailto: dingryan2@gmail.com" target="_blank" class="socials"><img src="./assets/email.png" alt="Email"></a>
+        <a href="https://www.linkedin.com/in/ryand26/" target="_blank" class="socials"><img src="./assets/linkedin.png" alt="LinkedIn"></a>
+        <a href="https://github.com/ryanDing26" target="_blank" class="socials"><img src="./assets/github.png" alt="GitHub"></a>
       </section>
     </header>
-
+    <div id="top"></div>
     <main>
-      <h2>About Me</h2>
-      <section id="about">
-        <p>
+      <h2 id="about">About Me</h2>
+      <section>
+        <p class="details">
           Having always been good at math and reasoning in grade school, I decided to take my inclinations one step further into a 
-          degree in computer science at <a href="">UC San Diego</a>. I am fascinated with what the future of artificial intelligence and software engineering 
+          degree in computer science at <a href="https://ucsd.edu/">UC San Diego</a>. I am fascinated with what the future of artificial intelligence and software engineering 
           has to offer, and I am constantly refining myself as a programmer and as a person, seeking to become a T-shaped developer in both fields 
           and to practice good personal habits for myself and my community.
         </p>
-        <p>
+        <p class="details">
           When I am not developing new things, you can find me dancing in my room, playing with my dog, or trying out a new restaurant!
         </p>
       </section>
       <hr>
-      <h2>Experience</h2>
-      <section id="experiences">
-        <!-- Role is the largest font on one line, followed by organization and location on the second, and then date on third. -->
-        <div class="experience">
-          <h3>Deep Learning Researcher</h3>
-          <div class="job-info">Yu-Gilson Lab @ UC San Diego | August 2022 - Present</div>
-          <ul class="experience-details">
-            <li>Worked alongside Dr. Michael Gilson and Dr. Rose Yu to develop a latent diffusion model in PyTorch conditioned on protein binding sites to generate ligand for targeted drug design</li>
-            <li>Incorporated experimental data into the lab’s existing molecular generative model to refine binding affinity calculations and optimize predictions for drug-target interactions</li>
-          </ul>
+      <h2 id="projects">Projects</h2>
+      <section class="project-container">
+        <div class="project">
+          <a href="https://github.com/ryanDing26/Tech-Layoff-Modeling" target="_blank">
+            <img src="./assets/layoffs.jpg" alt="Tech Layoffs from 2022-2024">
+            <div class="project-info">
+              <h3>Tech Layoff Modeling</h3>
+            </div>
+          </a>
         </div>
-        <div class="experience">
-          <h3>Undergraduate Researcher</h3>
-          <div class="job-info"><a href="http://dimacs.rutgers.edu/" target="_blank">DIMACS</a> REU @ <a href="https://www.rutgers.edu/" target="_blank">Rutgers University</a> | May 2024 - July 2024</div>
-          <ul class="experience-details">
-            <li>Conducted research under Dr. Wilma Olson to investigate sequence-dependency in loop-like DNA structures, enhancing the understanding on genomic folding and function in a computational context</li>
-            <li>Integrated findings into the emDNA software in C++ to expand its capabilities in modeling DNA behavior with regards to elastic energies and sequence information</li>
-            <li>Work done for this position can be found <a href="https://reu.dimacs.rutgers.edu/~rd1134/" target="_blank">here</a></li>
-          </ul>
+        <div class="project">
+          <a href="https://github.com/ryanDing26/Housing-Price-Predictor" target="_blank">
+            <img src="./assets/sold.jpg" alt="Housing Forecast Graph">
+            <div class="project-info">
+              <h3>Real Estate Price Predictor</h3>
+            </div>
+          </a>
         </div>
-        <div class="experience">
-          <h3>Undergraduate Tutor</h3>
-          <div class="job-info">Computer Science and Engineering Department @ UC San Diego | April 2024 - June 2024</div>
-          <ul class="experience-details">
-            <li>Provided dedicated support to 450+ undergraduate students enrolled in CSE 100R: Advanced Data Structures via lab hours to enhance student understanding of concepts such as trees, graphs, and hashing</li>
-            <li>Assisted in testing and validating weekly programming assignments and examinations, ensuring consistency within the automatic grading system and alignment of content to learning objectives</li>
-          </ul>
+        <div class="project">
+          <a href="https://ryanding26.github.io/AS-Resource-Guide/" target="_blank">
+            <img src="./assets/geisel.png" alt="Geisel Library">
+            <div class="project-info">
+              <h3>Student Resource Guide</h3>
+            </div>
+          </a>
         </div>
-        <div class="experience">
-          <h3>Student Mentor</h3>
-          <div class="job-info"><a href="https://spis.ucsd.edu/" target="_blank">Summer Program for Incoming Students</a> @ UC San Diego | August 2023 - September 2023</div>
-          <ul class="experience-details">
-            <li>Guided 50+ incoming students in developing proficiency in Python programming concepts via various lab assignments</li>
-            <li>Mentored students through their capstone projects in machine learning, providing technical expertise in project development through the use of libraries such as NLTK, pandas, and XGBoost</li>
-          </ul>
+        <div class="project">
+          <img src="./assets/2048.jpg" alt="2048">
+          <div class="project-info">
+            <h3>2048 Expectimax Agent*</h3>
+          </div>
         </div>
-        <div class="experience">
-          <h3>Undergraduate Researcher</h3>
-          <div class="job-info"><a href="https://designlab.ucsd.edu/" target="_blank">The Design Lab</a> @ UC San Diego | October 2023 - January 2024</div>
-          <ul class="experience-details">
-            <li>Engaged with UC San Diego faculty to assess and address undergraduate research needs and to facilitate a sense of understanding and support within the academic community</li>
-            <li>Leveraged university resources to develop an action plan aimed at enhancing the undergraduate research experience</li>
-            <li>Work done for this position can be found <a href="https://designlab.ucsd.edu/spur-team-9/" target="_blank">here</a></li>
-          </ul>
+        <div class="project">
+          <img src="./assets/blackjack.jpg" alt="Blackjack">
+          <div class="project-info">
+            <h3>Blackjack RL Agent*</h3>
+          </div>
         </div>
+        <div class="project">
+          <img src="./assets/sudoku.jpg" alt="Sudoku">
+          <div class="project-info">
+            <h3>Sudoku 3SAT Solver*</h3>
+          </div>
+        </div>
+        <div class="project">
+          <a href="https://nicocvn.github.io/emDNA/" target="_blank">
+            <img src="./assets/dna.png" alt="DNA structure">
+            <div class="project-info">
+              <h3>emDNA Binding Site Predictor</h3>
+            </div>
+          </a>
+        </div>
+        <div class="project">
+          <a href="">
+            <img src="./assets/stonks.jpg" alt="Stonks">
+            <div class="project-info">
+              <h3>Asset Trading Strategizer</h3>
+            </div>
+          </a>
+        </div>
+      <p>* Code available upon request.</p>
       </section>
-      <hr>
-      <h2>Projects</h2>
-      <section id="projects">
-        <section class="ml-projects">
-          <h3>Machine Learning</h3>
-        </section>
-        <section class="software-projects">
-          <h3>Software Engineering</h3>
-        </section>
-      </section>
+      
+      <script src="script.js"></script>
     </main>
   </body>
 </html>
