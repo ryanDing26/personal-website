@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const image = document.createElement('img');
             image.src = project.image;
             image.alt = project.name;
-            image.className = 'w-full h-full';
+            image.className = 'w-full h-full object-cover';
             
             // Overlay container to provide project info
             const hoverContainer = document.createElement('div');

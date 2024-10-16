@@ -19,7 +19,7 @@
     },
     {
         "name": "Reinforcement Learning Projects",
-        "image":"./assets/2048.jpg",
+        "image":"./assets/rl.png",
         "description": "RL-based game solvers; Code available upon request",
         "link": ""
     },
