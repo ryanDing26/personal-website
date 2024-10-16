@@ -156,17 +156,6 @@ img {
 }
 
 @media screen and (max-width: 768px) {
-
-  * {
-    font-family: "Play", sans-serif;
-    color: white;
-    text-decoration: none;
-  }
-  
-  html {
-    scroll-behavior: smooth;
-  }
-  
   .me {
     position: relative;
     width: 100%;
@@ -185,9 +174,9 @@ img {
   header {
     position: sticky;
     top: 25px;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
     margin-right: 25px;
     padding: 0 25px;
     min-width: 25%;
@@ -313,5 +302,4 @@ img {
     text-align: center;
     background-color: rgba(0,0,0,0.5)
   }
-  
 }

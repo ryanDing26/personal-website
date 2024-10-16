@@ -5,119 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ryan Ding</title>
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./dist/output.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Nabla&family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
   </head>
-  <body>
-    <noscript>
-      <h1>This would be Ryan Ding's personal website!</h1>
-      <p>...if you had JavaScript enabled. Please do so!</p>
-    </noscript>
-    <header>
-      <div class="me">
-        <img src="./assets/ryan.png" alt="Ryan Ding" class="profile-picture">
-        <!-- Deprecated effect that I may or may not reintegrate later -->
-        <!-- <div class="aura"></div>
-        <div class="aura"></div>
-        <div class="aura"></div>
-        <div class="aura"></div>
-        <div class="aura"></div> -->
-      </div>
-      <hr>
-      <span id="name"><a href="#top">Ryan Ding</a></span>
-      <hr>
-      <nav>
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="./assets/resume.pdf" target="_blank">Resume</a>
-      </nav>
-      <section id="contact">
-        <a href="mailto: dingryan2@gmail.com" target="_blank" class="socials"><img src="./assets/email.png" alt="Email"></a>
-        <a href="https://www.linkedin.com/in/ryand26/" target="_blank" class="socials"><img src="./assets/linkedin.png" alt="LinkedIn"></a>
-        <a href="https://github.com/ryanDing26" target="_blank" class="socials"><img src="./assets/github.png" alt="GitHub"></a>
-      </section>
-    </header>
-    <div id="top"></div>
-    <main>
-      <h2 id="about">About Me</h2>
-      <section>
-        <p class="details">
-          Having always been good at math and reasoning in grade school, I decided to take my inclinations one step further into a 
-          degree in computer science at <a href="https://ucsd.edu/">UC San Diego</a>. I am fascinated with what the future of artificial intelligence and software engineering 
-          has to offer, and I am constantly refining myself as a programmer and as a person, seeking to become a T-shaped developer in both fields 
-          and to practice good personal habits for myself and my community.
-        </p>
-        <p class="details">
-          When I am not developing new things, you can find me dancing in my room, playing with my dog, or trying out a new restaurant!
-        </p>
-      </section>
-      <hr>
-      <h2 id="projects">Projects</h2>
-      <section class="project-container">
-        <div class="project">
-          <a href="https://github.com/ryanDing26/Tech-Layoff-Modeling" target="_blank">
-            <img src="./assets/layoffs.jpg" alt="Tech Layoffs from 2022-2024">
-            <div class="project-info">
-              <h3>Tech Layoff Modeling</h3>
-            </div>
-          </a>
+  <body class="mx-auto min-h-screen max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0 text-white bg-custom-background">
+    <div class="lg:flex lg:justify-between">
+      <header class="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:gap-y-2 lg:py-24">
+        <div class="flex justify-center items-center perspective-[500px]">
+          <a href="/"><h1 class="text-6xl font-nabla animate-spinner">RYAN DING</h1></a>
         </div>
-        <div class="project">
-          <a href="https://github.com/ryanDing26/Housing-Price-Predictor" target="_blank">
-            <img src="./assets/sold.jpg" alt="Housing Forecast Graph">
-            <div class="project-info">
-              <h3>Real Estate Price Predictor</h3>
-            </div>
-          </a>
-        </div>
-        <div class="project">
-          <a href="https://ryanding26.github.io/AS-Resource-Guide/" target="_blank">
-            <img src="./assets/geisel.png" alt="Geisel Library">
-            <div class="project-info">
-              <h3>Student Resource Guide</h3>
-            </div>
-          </a>
-        </div>
-        <div class="project">
-          <img src="./assets/2048.jpg" alt="2048">
-          <div class="project-info">
-            <h3>2048 Expectimax Agent*</h3>
-          </div>
-        </div>
-        <div class="project">
-          <img src="./assets/blackjack.jpg" alt="Blackjack">
-          <div class="project-info">
-            <h3>Blackjack RL Agent*</h3>
-          </div>
-        </div>
-        <div class="project">
-          <img src="./assets/sudoku.jpg" alt="Sudoku">
-          <div class="project-info">
-            <h3>Sudoku 3SAT Solver*</h3>
-          </div>
-        </div>
-        <div class="project">
-          <a href="https://nicocvn.github.io/emDNA/" target="_blank">
-            <img src="./assets/dna.png" alt="DNA structure">
-            <div class="project-info">
-              <h3>emDNA Binding Site Predictor</h3>
-            </div>
-          </a>
-        </div>
-        <div class="project">
-          <a href="">
-            <img src="./assets/stonks.jpg" alt="Stonks">
-            <div class="project-info">
-              <h3>Asset Trading Strategizer</h3>
-            </div>
-          </a>
-        </div>
-      <p>* Code available upon request.</p>
-      </section>
-      
-      <script src="script.js"></script>
-    </main>
+        <nav class="text-3xl flex justify-center items-center gap-2">
+          <a href="#about-section" class="font-honk relative inline-block after:content-[''] after:absolute after:bg-warm-gradient after:w-full after:scale-x-0 after:h-[2px] after:left-0 after:bottom-0 after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left">About</a>
+          <a href="#projects-section" class="font-honk relative inline-block after:content-[''] after:absolute after:bg-warm-gradient after:w-full after:scale-x-0 after:h-[2px] after:left-0 after:bottom-0 after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left">Projects</a>
+          <a href="./assets/resume.pdf" target="_blank" class="font-honk relative inline-block after:content-[''] after:absolute after:bg-warm-gradient after:w-full after:scale-x-0 after:h-[2px] after:left-0 after:bottom-0 after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left">Resume</a>
+        </nav>
+        <ul class="flex justify-center items-center gap-2">
+          <li>
+            <a aria-label="Email (opens in new tab)" title="Email" href="mailto: dingryan2@gmail.com" target="_blank" rel="noopener noreferrer">
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="32px" height="32px" class="hover:fill-gray-300">
+                <defs>
+                  <linearGradient id="gradient-fill">
+                    <stop offset="0%" stop-color="yellow" />
+                    <stop offset="50%" stop-color="orange" />
+                    <stop offset="100%" stop-color="red" />
+                  </linearGradient>
+                </defs>
+                <path fill="url(#gradient-fill)" d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z" />
+              </svg>
+            </a>  
+          </li>
+          <li>
+            <a aria-label="LinkedIn (opens in new tab)" title="LinkedIn" href="https://www.linkedin.com/in/ryand26/" target="_blank" rel="noopener noreferrer">
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32px" height="32px" class="hover:fill-gray-300">
+                <defs>
+                  <linearGradient id="gradient-fill">
+                    <stop offset="0%" stop-color="yellow" />
+                    <stop offset="50%" stop-color="orange" />
+                    <stop offset="100%" stop-color="red" />
+                  </linearGradient>
+                </defs>
+                <path fill="url(#gradient-fill)" d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a aria-label="GitHub (opens in new tab)" title="GitHub" href="https://github.com/ryanDing26" target="_blank" rel="noopener noreferrer">
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="32px" height="32px" class="hover:border-black">
+                <defs>
+                  <linearGradient id="gradient-fill">
+                    <stop offset="0%" stop-color="yellow" />
+                    <stop offset="50%" stop-color="orange" />
+                    <stop offset="100%" stop-color="red" />
+                  </linearGradient>
+                </defs>
+                <path fill="url(#gradient-fill)" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </header>
+      <main class="pt-24 lg:w-1/2 lg:py-24">
+        <h2 class="font-nabla text-4xl mb-2" id="about-section">About</h2>
+        <section id="about">
+          <p class="font-comfortaa">
+            As someone who has always been good at math and reasoning, I currently pursue a Bachelor of Science in Computer Science at <a class="font-black decoration-[#FFCD00] hover:underline" aria-label="UC San Diego Link (opens in new tab)" href="https://ucsd.edu/" target="_blank" rel="noopener noreferrer"><span class="text-[#182B49]">UC San Diego</span></a>. 
+            I am particularly fascinated about developing software with greater affordances and ease of accessibility to users, and applying state-of-the-art 
+            generative modeling and sequential forecasting techniques towards solving real-world problems.<br><br>
+    
+            When I am not coding, you can find me dancing, playing with my dog, or going on walks at the beach!
+          </p>
+        </section>
+        <h2 class="font-nabla text-4xl" id="projects-section">Projects</h2>
+        <section id="projects" class="font-comfortaa max-w-[1/2] grid masonry-grid grid-cols-1 grid-cols-2 max-w-7xl mx-auto py-2">
+        </section>
+      </main>
+    </div>
+    <footer class="display-block p-2 text-center text-gray-400 text-xs">
+      Portfolio layout inspired by <a href="https://brittanychiang.com/" target="_blank">Brittany Chiang</a>. Designed with HTML, Tailwind, and JavaScript.
+    </footer>
+    <script src="main.js"></script>
   </body>
 </html>
