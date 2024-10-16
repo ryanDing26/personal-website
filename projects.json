@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Tech Layoff Modeling",
+        "image": "./assets/layoffs.jpg",
+        "description": "Using Machine Learning methods to accurately forecast upcoming layoffs",
+        "link": "https://github.com/ryanDing26/Tech-Layoff-Modeling"
+    },
+    {
+        "name": "Real Estate Price Forecaster",
+        "image": "./assets/sold.jpg",
+        "description": "Forecasting median home prices with RNN architectures",
+        "link": "https://github.com/ryanDing26/Housing-Price-Predictor"
+    },
+    {
+        "name": "Student Resource Guide",
+        "image": "./assets/geisel.png",
+        "description": "Providing UC San Diego students with a centralized platform to learn about their campus resources",
+        "link": "https://ryanding26.github.io/AS-Resource-Guide/"
+    },
+    {
+        "name": "Reinforcement Learning Projects",
+        "image":"./assets/rl.png",
+        "description": "RL-based game solvers; Code available upon request",
+        "link": ""
+    },
+    {
+        "name": "emDNA",
+        "image": "./assets/dna.png",
+        "description": "Energy minimization and binding site prediction tool to model DNA behavior",
+        "link": "https://github.com/nicocvn/emDNA"
+    },
+    {
+        "name": "Pantry Tracker",
+        "image": "./assets/pantrytracker.png",
+        "description": "Full stack inventory management system with AI-powered suggestions",
+        "link": "https://ryans-pantry-tracker.vercel.app/"
+    },
+    {
+        "name": "CareerGPT",
+        "image": "./assets/careergpt.png",
+        "description": "Retrieval-augmented LLM geared towards giving computing-based career advice",
+        "link": "https://careergpt-ryan.vercel.app/"
+    }
+]
